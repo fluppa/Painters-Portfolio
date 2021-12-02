@@ -1,0 +1,53 @@
+$navHeight: 60px;
+$scIconSize: 28px;
+
+nav{
+    height: $navHeight;
+    width: 100%;
+    background-color: #85858d13;
+    position: fixed;
+    top: 0px;
+
+    .nav-list{
+        float:right;
+        font-size: 1.1em;
+        li{
+            float: left;
+            line-height: $navHeight;
+            margin-right: $majorMargin;
+            //CHANGE THIS
+            .drop-down-list{
+                display: none;
+            }
+          
+            &:hover{
+
+                .drop-down-list{
+                    display: block;
+                }
+                /*
+                a:first-child{
+                    border: 1px solid rgb(255, 255, 255);
+                    border-radius: 10px;
+                }*/
+            }
+        }
+
+    }
+    .drop-down-list{
+        position: absolute;
+        margin: 0;
+        padding-left: $minorMargin;
+        background-color: $dropdown;
+        width: 200px;
+        height: auto;
+        li{
+            //border-bottom: 1px dotted rgb(238, 237, 237);
+            
+        }
+        ul{
+            display: none;
+            font-size: 0.75em;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+#index-page {
+    section{
+        height: 100vh;
+    }
+    .content-wrap{
+        margin-left: $contentMargin;
+        article{
+            width: 900px;
+            margin-top: 50px;
+            font-size: 1.2em;
+        }
+    }
+    #title .content-wrap{
+       
+        margin-left: 0;
+    }
+    h3{
+        font-size: 4em;
+        font-weight: 400;
+        padding-top: 150px;
+    }
+}
