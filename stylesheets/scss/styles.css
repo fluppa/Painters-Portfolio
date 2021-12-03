@@ -42,48 +42,63 @@ nav {
   width: 100%;
   background-color: #85858d13;
   position: fixed;
+  z-index: 1;
   top: 0px;
 }
 
-nav .nav-list {
+.nav-list {
   float: right;
   font-size: 1.1em;
 }
 
-nav .nav-list li {
+.nav-list li {
   float: left;
   line-height: 60px;
   margin-right: 95px;
 }
 
-nav .nav-list li .drop-down-list {
-  display: none;
-}
-
-nav .nav-list li:hover {
-  /*
-                a:first-child{
-                    border: 1px solid rgb(255, 255, 255);
-                    border-radius: 10px;
-                }*/
-}
-
-nav .nav-list li:hover .drop-down-list {
+.nav-list li:hover .drop-down-list {
   display: block;
 }
 
-nav .drop-down-list {
+.nav-list li:hover:nth-child(3) a {
+  border: 0 0 0 1px solid white;
+}
+
+.drop-down-list {
+  display: none;
   position: absolute;
   margin: 0;
-  padding-left: 25px;
+  padding: 0 20px 0 20px;
   background-color: #cac7c7de;
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 
-nav .drop-down-list ul {
-  display: none;
-  font-size: 0.75em;
+.drop-down-list li {
+  border-bottom: 1px solid #eeeded;
+  width: 100%;
+}
+
+.drop-down-list li:last-of-type {
+  border-bottom: none;
+}
+
+.drop-down-list li:hover .drop-down-menu {
+  display: block;
+}
+
+.drop-down-menu {
+  border-top: 1px solid #eeeded;
+}
+
+.drop-down-menu li {
+  border-bottom: none;
+  line-height: 35px;
+}
+
+.drop-down-menu a {
+  font-size: 0.9em;
 }
 
 #index-page section {
@@ -175,5 +190,50 @@ section.article-box article {
   width: 50px;
   height: 50px;
   margin-right: 50px;
+}
+
+#aboutMe {
+  position: relative;
+}
+
+#aboutMe img {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: -550px;
+  height: 100%;
+}
+
+.menu-wrapper {
+  margin-top: 95px;
+}
+
+.tiles-menu {
+  width: 450px;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px;
+      grid-template-columns: 200px 200px;
+  -ms-grid-rows: 168px 100px;
+      grid-template-rows: 168px 100px;
+  gap: 10px;
+}
+
+.tiles-menu li {
+  background-color: blue;
+  display: block;
+}
+
+.drop-down-tiles {
+  display: none;
+}
+
+.site-header h1 {
+  font-weight: 100;
+  font-size: 5em;
+  margin-top: 190px;
 }
 /*# sourceMappingURL=styles.css.map */

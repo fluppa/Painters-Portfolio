@@ -1,0 +1,22 @@
+.menu-wrapper{
+    margin-top: $majorMargin;
+}
+.tiles-menu{
+    width: 450px;
+    background-color: red;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 168px 100px;
+    gap: 10px;
+    li{
+
+        background-color: blue;
+        display: block;
+    }
+}
+
+.drop-down-tiles{
+    display: none;
+}

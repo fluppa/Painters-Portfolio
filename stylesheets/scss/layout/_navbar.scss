@@ -6,48 +6,65 @@ nav{
     width: 100%;
     background-color: #85858d13;
     position: fixed;
+    z-index: 1;
     top: 0px;
+}
 
-    .nav-list{
-        float:right;
-        font-size: 1.1em;
-        li{
-            float: left;
-            line-height: $navHeight;
-            margin-right: $majorMargin;
-            //CHANGE THIS
-            .drop-down-list{
-                display: none;
-            }
-          
-            &:hover{
-
-                .drop-down-list{
-                    display: block;
-                }
-                /*
-                a:first-child{
-                    border: 1px solid rgb(255, 255, 255);
-                    border-radius: 10px;
-                }*/
-            }
-        }
-
+.nav-list{
+    float:right;
+    font-size: 1.1em;
+    li{
+        float: left;
+        line-height: $navHeight;
+        margin-right: $majorMargin; 
     }
-    .drop-down-list{
-        position: absolute;
-        margin: 0;
-        padding-left: $minorMargin;
-        background-color: $dropdown;
-        width: 200px;
-        height: auto;
-        li{
-            //border-bottom: 1px dotted rgb(238, 237, 237);
-            
+    li:hover{
+        .drop-down-list{
+            display: block;
         }
-        ul{
-            display: none;
-            font-size: 0.75em;
+        &:nth-child(3) a{
+            border: 0 0 0 1px solid rgb(255, 255, 255);
+           
         }
     }
+}
+
+.drop-down-list{
+    display: none;
+    position: absolute;
+    margin: 0;
+    //padding-left: $minorMargin;
+    padding: 0 20px 0 20px;
+    background-color: $dropdown;
+    width: 150px;
+    height: auto;
+    li{
+        border-bottom: 1px solid rgb(238, 237, 237);
+        width: 100%;
+        &:last-of-type{
+            border-bottom: none;
+        }
+    }
+    li:hover{
+        .drop-down-menu{
+            display: block;
+        }
+    }
+}
+
+.drop-down-menu{
+    //display: none;
+    border-top: 1px solid rgb(238, 237, 237);
+    
+    li{
+        
+        border-bottom: none;
+        
+        line-height: 35px;
+    }
+    a{
+        font-size: 0.9em;
+
+    }
+    
 }
