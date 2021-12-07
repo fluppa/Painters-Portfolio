@@ -200,7 +200,7 @@ nav {
 }
 
 .gallery-wrapper {
-  width: 1500px;
+  width: 80%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -257,35 +257,70 @@ section.article-box article {
   height: 100%;
 }
 
-.menu-wrapper {
-  margin-top: 95px;
-}
-
 .tiles-menu {
-  width: 450px;
-  background-color: red;
+  width: 1000px;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
+  height: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 200px 200px;
-      grid-template-columns: 200px 200px;
-  -ms-grid-rows: 168px 100px;
-      grid-template-rows: 168px 100px;
+  -ms-grid-columns: 495px 495px;
+      grid-template-columns: 495px 495px;
+  -ms-grid-rows: 295px 175.59524px;
+      grid-template-rows: 295px 175.59524px;
   gap: 10px;
 }
 
+.tiles-menu > li:first-of-type {
+  background-image: url(../../../resources/img-min/tilesBackground/oil.jpg);
+}
+
+.tiles-menu > li:nth-of-type(2) {
+  background-image: url(../../../resources/img-min/tilesBackground/murals.JPG);
+}
+
+.tiles-menu > li:nth-of-type(3) {
+  background-image: url(../../../resources/img-min/tilesBackground/drawings.jpg);
+  background-position-y: -120px;
+}
+
+.tiles-menu > li:last-of-type {
+  background-image: url(../../../resources/img-min/tilesBackground/architecture.jpg);
+  background-position-y: -150px;
+}
+
 .tiles-menu li {
-  background-color: blue;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: block;
 }
 
-.drop-down-tiles {
-  display: none;
+.tiles-menu li a {
+  display: inline-block;
+  margin: 25px 0 0 25px;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.tiles-menu li a:hover {
+  text-decoration: underline;
+}
+
+.tiles-menu li ul {
+  margin: 10px 0 0 25px;
+  padding: 0;
+}
+
+.tiles-menu li ul a {
+  display: inline-block;
+  margin: 5px 0 0 0;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .site-header {
-  margin-bottom: 150px;
+  margin-bottom: 95px;
 }
 
 .site-header h1 {
