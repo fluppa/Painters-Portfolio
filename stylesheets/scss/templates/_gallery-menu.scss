@@ -1,61 +1,60 @@
 $menuWidth: 1000px;
 $gap: 10px;
 $rowHeight: 300px - $gap/2;
-.tiles-menu{
-    width: $menuWidth;
-    padding:0;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    display: grid; 
-    grid-template-columns: $menuWidth/2-$gap/2 $menuWidth/2-$gap/2;
-    grid-template-rows: $rowHeight $rowHeight/1.68;
-    gap: $gap;
- 
-    & > li:first-of-type{
-        background-image: url(../../../resources/img-min/tilesBackground/oil.jpg);   
-    }
+.tiles-menu {
+  width: $menuWidth;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: $menuWidth/2-$gap/2 $menuWidth/2-$gap/2;
+  grid-template-rows: $rowHeight $rowHeight/1.68;
+  gap: $gap;
 
-    & > li:nth-of-type(2){
-        background-image: url(../../../resources/img-min/tilesBackground/murals.JPG);  
-    }
+  & > li:first-of-type {
+    background-image: url('../../resources/img-min/tilesBackground/oil.jpg');
+  }
 
-    & > li:nth-of-type(3){
-        background-image: url(../../../resources/img-min/tilesBackground/drawings.jpg); 
-        background-position-y: -120px;
-    }
+  & > li:nth-of-type(2) {
+    background-image: url('../../resources/img-min/tilesBackground/murals.JPG');
+  }
 
-    & > li:last-of-type{
-        background-image: url(../../../resources/img-min/tilesBackground/architecture.jpg); 
-        background-position-y: -150px;
-    }
+  & > li:nth-of-type(3) {
+    background-image: url('../../resources/img-min/tilesBackground/drawings.jpg');
+    background-position-y: -120px;
+  }
 
-    li{
-        background-size: cover;
-        background-repeat: no-repeat;
-       
-        display: block;
-        a{
-            display: inline-block;
-            margin: $minorMargin 0 0 $minorMargin;
-            font-size: 1.5em;
-            font-weight: 400;
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-        ul {
-            margin: 10px 0 0 $minorMargin;
-        
-            a{
-                display: inline-block;
-                margin: 5px 0 0 0;
-                font-size: 20px;
-                font-weight: 300;
-            }
-           
-            padding: 0;
-        }
+  & > li:last-of-type {
+    background-image: url('../../resources/img-min/tilesBackground/architecture.jpg');
+    background-position-y: -150px;
+  }
+
+  li {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: block;
+    a {
+      display: inline-block;
+      margin: $minorMargin 0 0 $minorMargin;
+      font-size: 1.5em;
+      font-weight: 400;
+      &:hover {
+        text-decoration: underline;
+      }
     }
+    ul {
+      margin: 10px 0 0 $minorMargin;
+
+      a {
+        display: inline-block;
+        margin: 5px 0 0 0;
+        font-size: 20px;
+        font-weight: 300;
+      }
+
+      padding: 0;
+    }
+  }
 }
-

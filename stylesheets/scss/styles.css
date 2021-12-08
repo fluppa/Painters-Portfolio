@@ -187,11 +187,11 @@ nav {
 }
 
 .sc-wrapper a:first-of-type {
-  background-image: url("../../../resources/img-min/icons/f-icon.png");
+  background-image: url("../../resources/img-min/icons/f-icon.png");
 }
 
 .sc-wrapper a:last-of-type {
-  background-image: url("../../../resources/img-min/icons/ig-icon.png");
+  background-image: url("../../resources/img-min/icons/ig-icon.png");
 }
 
 .sc-wrapper a:hover {
@@ -273,20 +273,20 @@ section.article-box article {
 }
 
 .tiles-menu > li:first-of-type {
-  background-image: url(../../../resources/img-min/tilesBackground/oil.jpg);
+  background-image: url("../../resources/img-min/tilesBackground/oil.jpg");
 }
 
 .tiles-menu > li:nth-of-type(2) {
-  background-image: url(../../../resources/img-min/tilesBackground/murals.JPG);
+  background-image: url("../../resources/img-min/tilesBackground/murals.JPG");
 }
 
 .tiles-menu > li:nth-of-type(3) {
-  background-image: url(../../../resources/img-min/tilesBackground/drawings.jpg);
+  background-image: url("../../resources/img-min/tilesBackground/drawings.jpg");
   background-position-y: -120px;
 }
 
 .tiles-menu > li:last-of-type {
-  background-image: url(../../../resources/img-min/tilesBackground/architecture.jpg);
+  background-image: url("../../resources/img-min/tilesBackground/architecture.jpg");
   background-position-y: -150px;
 }
 

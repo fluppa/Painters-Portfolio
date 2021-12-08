@@ -1,27 +1,27 @@
-.sc-wrapper{
-    height: $navHeight;
-    width: auto;
-    float: left;
-    margin-left: $majorMargin;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    a{
-        margin-right: $minorMargin;
-        width: $scIconSize;
-        height: $scIconSize;
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        filter: invert(0.94);
-        &:first-of-type{
-            background-image: url("../../../resources/img-min/icons/f-icon.png");
-        }
-        &:last-of-type{
-            background-image: url("../../../resources/img-min/icons/ig-icon.png");
-        }
-        &:hover{
-            filter: invert(1);
-        }
+.sc-wrapper {
+  height: $navHeight;
+  width: auto;
+  float: left;
+  margin-left: $majorMargin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    margin-right: $minorMargin;
+    width: $scIconSize;
+    height: $scIconSize;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(0.94);
+    &:first-of-type {
+      background-image: url('../../resources/img-min/icons/f-icon.png');
     }
+    &:last-of-type {
+      background-image: url('../../resources/img-min/icons/ig-icon.png');
+    }
+    &:hover {
+      filter: invert(1);
+    }
+  }
 }
