@@ -39,9 +39,10 @@ a:hover {
 
 footer {
   background-color: #414252;
+  width: 100%;
   margin-top: 200px;
   text-align: center;
-  padding: 50px;
+  padding: 50px 0px 50px 0px;
 }
 
 footer * {
@@ -328,6 +329,17 @@ section.article-box article {
   margin: 5px 0 0 0;
   font-size: 20px;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 1220px) {
+  .tiles-menu {
+    width: 800px;
+    -ms-grid-columns: 395px 395px;
+        grid-template-columns: 395px 395px;
+    -ms-grid-rows: 295px 175.59524px;
+        grid-template-rows: 295px 175.59524px;
+    gap: 10px;
+  }
 }
 
 .site-header {

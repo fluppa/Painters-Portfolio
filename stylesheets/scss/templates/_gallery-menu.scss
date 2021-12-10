@@ -58,3 +58,14 @@ $rowHeight: 300px - $gap/2;
     }
   }
 }
+
+@media only screen and (max-width: 1220px) {
+  .tiles-menu {
+    $menuWidth: 800px;
+    $gap: 10px;
+    width: $menuWidth;
+    grid-template-columns: $menuWidth/2-$gap/2 $menuWidth/2-$gap/2;
+    grid-template-rows: $rowHeight $rowHeight/1.68;
+    gap: $gap;
+  }
+}
