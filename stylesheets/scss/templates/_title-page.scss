@@ -1,6 +1,14 @@
 h1{
     font-size: 7em;
     font-weight: 500;
-    text-align: center;
-    margin-top: 40vh;
+    margin: 40vh 0 0 0;
+}
+
+@media only screen and (max-width:900px){
+    h1{
+        
+        transform: translateY(-50%);
+        font-size: 4em;
+        margin: 0 20px 0 20px;
+    }
 }

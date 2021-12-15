@@ -3,6 +3,7 @@
         height: 100vh;
     }
     .content-wrap{
+        
         margin-left: $contentMargin;
         article{
             width: 900px;
@@ -11,12 +12,66 @@
         }
     }
     #title .content-wrap{
-       
-        margin-left: 0;
+        text-align: center;
+        margin: 0;
     }
     h3{
         font-size: 4em;
         font-weight: 400;
         padding-top: 150px;
+    }
+}
+
+@media only screen and(max-width: 1550px) {
+    #index-page {
+        #title .content-wrap{
+            text-align: center;
+            margin: auto;
+        }
+        .content-wrap{
+            width: 82vw;
+            margin-left: auto;
+            margin-right: auto;
+            article{
+                width: 80vw;
+                margin-top: 50px;
+                font-size: 1.2em;
+            }
+        }   
+    }
+}
+
+@media only screen and(max-width: 900px) {
+    #index-page {
+        section{
+            margin-bottom: 10vh;
+            height: 100vh;
+        }
+        h3{
+            text-align: center;
+            font-size: 3em;
+            padding-top: 10px;
+        }
+        #title{
+            height: 100vh;
+        }
+        #title .content-wrap{
+            position: relative;
+            top: 50vh;
+            
+            text-align: center;
+        }
+        .content-wrap{
+           
+            text-align: center;
+            width: 82vw;
+            margin: 10px auto 100px auto;
+        
+            article{
+                width: 80vw;
+                margin: 50px 0 0 0;
+                font-size: 3.4vw;
+            }
+        }   
     }
 }

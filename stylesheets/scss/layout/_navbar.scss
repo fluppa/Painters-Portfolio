@@ -1,6 +1,5 @@
 $navHeight: 60px;
 $scIconSize: 28px;
-
 nav{
     height: $navHeight;
     width: 100%;
@@ -8,12 +7,16 @@ nav{
     position: fixed;
     z-index: 1;
     top: 0px;
+    .closeBtn{
+        display: none;
+    }
 }
 
 .nav-list{
     float:right;
     font-size: 1.1em;
     li{
+       
         float: left;
         line-height: $navHeight;
         margin-right: $majorMargin; 
@@ -24,47 +27,82 @@ nav{
         }
         &:nth-child(3) a{
             border: 0 0 0 1px solid rgb(255, 255, 255);
-           
         }
     }
 }
 
-.drop-down-list{
+.drop-down-list{ 
     display: none;
     position: absolute;
     margin: 0;
+    list-style: none;
+   
     //padding-left: $minorMargin;
-    padding: 0 20px 0 20px;
+    padding:0;
+    
     background-color: $dropdown;
-    width: 150px;
+    width: 180px;
     height: auto;
     li{
-        border-bottom: 1px solid rgb(238, 237, 237);
-        width: 100%;
+        padding: 0 0 0 0;
+        font-weight: 300;
+        width: 160px;
         &:last-of-type{
             border-bottom: none;
         }
+   
+        > a:hover{
+            background-color: rgb(97, 93, 93);
+        }
     }
-    li:hover{
+    
+    li > a{
+        display: block;
+        font-weight: 300;
+        width: 160px;
+        padding: 0 0 0 20px;
+        
+    }
+
+    > li:hover {
+      //background-color: rgba(97, 93, 93, 0.685);
         .drop-down-menu{
-            display: block;
+           display: block;
         }
     }
 }
 
-.drop-down-menu{
-    //display: none;
-    border-top: 1px solid rgb(238, 237, 237);
-    
-    li{
-        
-        border-bottom: none;
-        
-        line-height: 35px;
-    }
-    a{
-        font-size: 0.9em;
 
-    }
+
+.drop-down-menu{
+    display: none;  
+    padding:0;
+    padding:20px 10px 20px 10px;
+    width: 130px;
+    height: 200px;
+    position: absolute;
+    left:180px;
+    top:0px;
+    background-color: rgb(97, 93, 93);
     
+    li{      
+        width: 160px;
+        border: none;
+        font-weight: 100;
+
+        line-height: 32px;
+        a{
+            background-color: transparent;
+            padding: 0 0 0 20px;
+            width: 10px;
+            font-size: 0.9em;
+        }
+        
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+   
 }
+
+

@@ -14,21 +14,22 @@
     <link rel="stylesheet" href="stylesheets/scss/styles.css" />
     <!-- ZMIENIĆ NA css/styles-min/dodać automację-->
     <link rel="icon" href="resources/img-min/icons/favicon.jpg" />
+    
   </head>
   <body>
-    <nav>
+    <div onclick="openHamburger()" class="hamburgerIcon"></div>
+    <nav class="hamburger">
+      <div onclick="closeHamburger()" class="closeBtn">&#10006</div>
       <adress class="sc-wrapper">
         <a href="https://www.facebook.com/dorotajablonskamalarstwo/"></a>
         <a href="https://www.instagram.com/dorotawojcik_artist/"></a>
       </adress>
       <ul class="nav-list">
-        <li><a href="#aboutMe">About me</a></li>
-        <li><a href="#exhibitions">Exhibitions</a></li>
         <li>
           <a href="menu.html">Gallery</a>
           <ul class="drop-down-list">
             <li>
-              <a href="gallery_markups/oil_paintings_g.html">Oil Paintings</a>
+              <a>Oil Paintings</a>
               <ul class="drop-down-menu">
                 <li>
                   <a href="gallery_markups/oil_paintings_f/acts_g.html">Acts</a>
@@ -52,7 +53,7 @@
             </li>
             <li><a href="gallery_markups/murals_g.html">Murals</a></li>
             <li>
-              <a href="gallery_markups/drawings_g.html">Drawings</a>
+              <a>Drawings</a>
               <ul class="drop-down-menu">
                 <li><a href="gallery_markups/drawings_f/ink_g.html">Ink</a></li>
                 <li>
@@ -68,6 +69,9 @@
             </li>
           </ul>
         </li>
+        <li><a href="#aboutMe">About me</a></li>
+        <li><a href="#exhibitions">Exhibitions</a></li>
+      
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -77,6 +81,7 @@
           <h1>Dorota Wójcik</h1>
         </div>
       </section>
+      <i class="arr-right"></i>
       <section id="aboutMe">
         <div class="content-wrap">
           <h3>About Me</h3>
@@ -156,8 +161,8 @@
         <div class="content-wrap">
           <h3>Contact</h3>
           <address>
-            <p>Email: lorem.ipsum@gmail.com</p>
-            <p>Phone: 48+ 999 999 999</p>
+            <p><strong>Email:</strong> wojcikdorota890@gmail.com</p>
+            <p><strong>Phone:</strong> (48+) 665 984 177</p>
             <div class="sc-wrapper">
               <a href="https://www.facebook.com/dorotajablonskamalarstwo/"></a>
               <a href="https://www.instagram.com/dorotawojcik_artist/"></a>
@@ -170,5 +175,6 @@
       <p>Copyright &copy; 2021 Dorota Wójcik. All rights reserverd.</p>
       <p>Site created by: szymon.poszwa15@gmail.com</p>
     </footer>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>

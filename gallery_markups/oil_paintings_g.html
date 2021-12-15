@@ -13,19 +13,18 @@
     <title>Dorota Wójcik</title>
     <link rel="stylesheet" href="../stylesheets/scss/styles.css">
     <link rel="icon" href="../resources/img-min/icons/favicon.jpg" />
+    
 </head>
-<body>
+<body onload="loaded()">
     <nav>
         <adress class="sc-wrapper">
             <a href="https://www.facebook.com/dorotajablonskamalarstwo/"></a>
             <a href="https://www.instagram.com/dorotawojcik_artist/"></a>
         </adress>
         <ul class="nav-list">
-            <li><a href="../index.html#aboutMe"">About me</a></li>
-            <li><a href="../index.html#exhibitions">Exhibitions</a></li>
             <li><a href="../menu.html">Gallery</a>
                 <ul class="drop-down-list">
-                    <li><a href="oil_paintings_g.html">Oil Paintings</a>
+                    <li><a>Oil Paintings</a>
                         <ul class="drop-down-menu">
                             <li><a href="oil_paintings_f/acts_g.html">Acts</a></li>
                             <li><a href="oil_paintings_f/shoes_g.html">Shoes</a></li>
@@ -36,7 +35,7 @@
                         </ul>
                     </li>
                     <li><a href="murals_g.html">Murals</a></li>
-                    <li><a href="drawings_g.html">Drawings</a>
+                    <li><a>Drawings</a>
                         <ul class="drop-down-menu">
                             <li><a href="drawings_f/ink_g.html">Ink</a></li>
                             <li><a href="drawings_f/pastels_g.html">Pastels</a></li>
@@ -46,6 +45,8 @@
                     <li><a href="architecture_g.html">Architecture</a></li>
                 </ul>
             </li>
+            <li><a href="../index.html#aboutMe"">About me</a></li>
+            <li><a href="../index.html#exhibitions">Exhibitions</a></li>
             <li><a href="../index.html#contact">Contact</a></li>
         </ul>
     </nav>
@@ -55,10 +56,18 @@
             <h2>Landscapes</h2> <!-- example Oil Paintings: Acts-->
         </header>
         <div class="gallery-wrapper">
+            <div class="fullscreen-wrapper">
+                <div class="closeBtn fullscreen">&#10006</div>
+                <!--<div class="button prev"></div>-->
+                <i class="button prev"></i>
+                <figure class="painting"></figure>
+                <i class="button next"></i>
+                <!--<div class="button next"></div>-->
+            </div>
             <ul class="gallery">
                 <li class="painting-wrapper">
                     <figure class=painting>
-                        <a class="painting-link" href="../resources/img-min/paintings/BLOKOWISKO 80X160 NOT AVALIABLE.jpg" target="_blank">
+                        <a class="painting-link" target="_blank">
                             <img class="painting-image" src="../resources/img-min/paintings/BLOKOWISKO 80X160 NOT AVALIABLE.jpg">
                         </a>
                         <figcaption>
@@ -70,7 +79,7 @@
                 </li>
                 <li class="painting-wrapper">
                     <figure class=painting>
-                        <a class="painting-link" href="../resources\img-min\paintings\Brzezno,wym 130x80,NOT AVALIABLE.jpg" target="_blank">
+                        <a class="painting-link" target="_blank">
                             <img class="painting-image" src="../resources\img-min\paintings\Brzezno,wym 130x80,NOT AVALIABLE.jpg">
                         </a>
                         <figcaption>
@@ -82,7 +91,7 @@
                 </li>
                 <li class="painting-wrapper">
                     <figure class=painting>
-                        <a class="painting-link" href="../resources/img-min/paintings/dmuchawce wym.100x 70cm.jpg" target="_blank">
+                        <a class="painting-link" >
                             <img class="painting-image" src="../resources/img-min/paintings/dmuchawce wym.100x 70cm.jpg">
                         </a>
                         <figcaption>
@@ -94,7 +103,7 @@
                 </li>
                 <li class="painting-wrapper">
                     <figure class=painting>
-                        <a class="painting-link" href="../resources\img-min\paintings\PEJZAZ_2_30x40 AVALIABLE.jpg" target="_blank">
+                        <a class="painting-link">
                             <img class="painting-image" src="../resources\img-min\paintings\PEJZAZ_2_30x40 AVALIABLE.jpg">
                         </a>
                         <figcaption>
@@ -106,7 +115,7 @@
                 </li>
                 <li class="painting-wrapper">
                     <figure class=painting>
-                        <a class="painting-link" href="../resources\img-min\paintings\PLAZA BRZEZNO 100X100 AVALIABLE.jpg" target="_blank">
+                        <a class="painting-link">
                             <img class="painting-image" src="../resources\img-min\paintings\PLAZA BRZEZNO 100X100 AVALIABLE.jpg">
                         </a>
                         <figcaption>
@@ -124,5 +133,6 @@
       <p>Copyright &copy; 2021 Dorota Wójcik. All rights reserverd.</p>
       <p>Site created by: szymon.poszwa15@gmail.com</p>
     </footer>
+    <script src="../scripts/scripts.js"></script>
 </body>
 </html>

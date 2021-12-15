@@ -1,6 +1,10 @@
-$menuWidth: 1000px;
+/*$menuWidth: 1000px;
 $gap: 10px;
-$rowHeight: 300px - $gap/2;
+$rowHeight: 300px - $gap/2;*/
+$menuWidth: 52vw;
+$gap: $menuWidth/100;
+$rowHeight: $menuWidth/3.33 - $gap/2;
+
 .tiles-menu {
   width: $menuWidth;
   padding: 0;
@@ -38,7 +42,8 @@ $rowHeight: 300px - $gap/2;
     a {
       display: inline-block;
       margin: $minorMargin 0 0 $minorMargin;
-      font-size: 1.5em;
+      //font-size: 1.5em;
+      font-size: 1.5vw;
       font-weight: 400;
       &:hover {
         text-decoration: underline;
@@ -50,7 +55,7 @@ $rowHeight: 300px - $gap/2;
       a {
         display: inline-block;
         margin: 5px 0 0 0;
-        font-size: 20px;
+        font-size: 0.9vw;
         font-weight: 300;
       }
 
@@ -60,12 +65,71 @@ $rowHeight: 300px - $gap/2;
 }
 
 @media only screen and (max-width: 1220px) {
+  $menuWidth: 74vw;
+  $gap: $menuWidth/100;
+  $rowHeight: $menuWidth/3 - $gap/2;
+
   .tiles-menu {
-    $menuWidth: 800px;
-    $gap: 10px;
     width: $menuWidth;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: $menuWidth/2-$gap/2 $menuWidth/2-$gap/2;
     grid-template-rows: $rowHeight $rowHeight/1.68;
     gap: $gap;
+
+    li {
+      a {
+        font-size: 2vw;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      ul {
+        a {
+          font-size: 1.4vw;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  $menuWidth: 70vw;
+  $gap: $menuWidth/100;
+  $rowHeight: $menuWidth/2;
+  .tiles-menu {
+    width: $menuWidth;
+    display: grid;
+    grid-template-columns: $menuWidth;
+    grid-template-rows: $rowHeight $rowHeight $rowHeight/2 $rowHeight/2;
+    gap: $gap;
+    li {
+      text-align: center;
+      text-transform: uppercase;
+      a {
+        display: block;
+        line-height: $rowHeight;
+        font-weight: 300;
+        padding: 0;
+        margin: 0 0 0 2vw;
+        font-size: 4.5vw;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &:nth-of-type(3) a {
+        line-height: $rowHeight/2;
+      }
+
+      &:nth-of-type(4) a {
+        line-height: $rowHeight/2;
+      }
+      ul {
+        display: none;
+        a {
+          font-size: 1.4vw;
+        }
+      }
+    }
   }
 }

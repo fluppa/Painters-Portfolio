@@ -1,10 +1,29 @@
 #aboutMe{
     position: relative;
     img{
+
         position: absolute;
         z-index: -2;
         top: 0;
         left:-550px;
         height: 100%;
     }
+}
+
+@media only screen and(max-width:1550px){
+    #aboutMe{
+        img{
+            opacity: 0.3;
+        }
+    }  
+}
+
+@media only screen and(max-width:900px){
+    #aboutMe{
+       
+        img{
+            display: none;
+        }
+    }
+    
 }
