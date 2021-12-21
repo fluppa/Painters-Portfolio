@@ -58,6 +58,7 @@ footer * {
 }
 
 nav {
+  display: block;
   height: 60px;
   width: 100%;
   background-color: #85858d13;
@@ -165,14 +166,14 @@ nav .closeBtn {
 }
 
 @media only screen and (max-width: 900px) {
+  .hamburger.show {
+    display: block;
+  }
   .hamburger {
     display: none;
     background-color: rgba(0, 0, 0, 0.925);
     position: fixed;
     height: 100vh;
-  }
-  .hamburger .sc-wrapper {
-    display: block;
   }
   .hamburger .closeBtn-hamburger {
     display: block;
@@ -184,24 +185,26 @@ nav .closeBtn {
     line-height: 5vw;
     margin: 20px;
   }
+  .hamburger .closeBtn-hamburger:hover {
+    cursor: pointer;
+  }
   .hamburger .nav-list {
-    margin: 0 0 0 0;
+    margin: 40px 0 0 0;
     padding: 0;
     text-align: center;
     float: initial;
-    font-size: 0;
+    font-size: 1.25em;
+    font-weight: 900;
   }
   .hamburger .nav-list li {
     margin: 0;
     float: initial;
-  }
-  .hamburger .nav-list > li:nth-of-type(2) {
-    display: none;
+    line-height: 40px;
   }
   .hamburger .nav-list > li:nth-of-type(3) {
     display: none;
   }
-  .hamburger .nav-list > li:nth-of-type(4) {
+  .hamburger .nav-list > li:last-of-type {
     display: none;
   }
   .hamburger .drop-down-list {
@@ -216,10 +219,10 @@ nav .closeBtn {
   }
   .hamburger .drop-down-list li {
     width: auto;
-    padding: 1.4vh;
+    padding: 0;
   }
   .hamburger .drop-down-list a {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 400;
     background-color: transparent;
     width: auto;
@@ -233,22 +236,22 @@ nav .closeBtn {
   .hamburger .drop-down-menu {
     display: block;
     position: static;
-    margin: 0 auto 0 auto;
+    margin: 10px auto 0 auto;
     padding: 0;
     background-color: transparent;
     height: auto;
-    width: auto;
+    text-align: center;
   }
   .hamburger .drop-down-menu li {
-    width: auto;
+    display: inline;
+    width: 100px;
     padding: 0;
   }
   .hamburger .drop-down-menu a {
     font-weight: 200;
-    font-size: 1.75em;
+    font-size: 1.25em;
     line-height: 3.4vh;
     background-color: transparent;
-    width: auto;
     height: auto;
     padding: 0;
   }
@@ -263,7 +266,7 @@ nav .closeBtn {
     position: absolute;
     height: 50px;
     width: 100%;
-    bottom: 150px;
+    bottom: 50px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -458,9 +461,6 @@ nav .closeBtn {
   top: 0;
   left: 0;
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -628,9 +628,15 @@ section.article-box article {
   }
 }
 
-/*$menuWidth: 1000px;
-$gap: 10px;
-$rowHeight: 300px - $gap/2;*/
+.mobile-menu {
+  display: none;
+  background-color: red;
+}
+
+.mobile-menu.show {
+  display: none;
+}
+
 .tiles-menu {
   width: 52vw;
   padding: 0;
@@ -650,6 +656,11 @@ $rowHeight: 300px - $gap/2;*/
   background-image: url("../../resources/img-min/tilesBackground/oil.jpg");
 }
 
+.tiles-menu > li:first-of-type > a:hover {
+  text-decoration: none;
+  color: #ebf0eb;
+}
+
 .tiles-menu > li:nth-of-type(2) {
   background-image: url("../../resources/img-min/tilesBackground/murals.JPG");
 }
@@ -657,6 +668,11 @@ $rowHeight: 300px - $gap/2;*/
 .tiles-menu > li:nth-of-type(3) {
   background-image: url("../../resources/img-min/tilesBackground/drawings.jpg");
   background-position-y: -120px;
+}
+
+.tiles-menu > li:nth-of-type(3) > a:hover {
+  text-decoration: none;
+  color: #ebf0eb;
 }
 
 .tiles-menu > li:last-of-type {
@@ -694,6 +710,12 @@ $rowHeight: 300px - $gap/2;*/
 }
 
 @media only screen and (max-width: 1220px) {
+  .mobile-menu {
+    display: none;
+  }
+  .mobile-menu.show {
+    display: none;
+  }
   .tiles-menu {
     width: 74vw;
     margin-left: auto;
@@ -716,6 +738,42 @@ $rowHeight: 300px - $gap/2;*/
 }
 
 @media only screen and (max-width: 900px) {
+  .mobile-menu.show {
+    display: block;
+    width: 100vw;
+  }
+  .mobile-menu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.925);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    -webkit-transition: width 200ms ease;
+    transition: width 200ms ease;
+  }
+  .mobile-menu ul {
+    padding: 0;
+    text-align: center;
+    margin-top: 25vh;
+  }
+  .mobile-menu ul li {
+    padding: 10px;
+  }
+  .mobile-menu .closeBtn {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+    font-size: 1.7em;
+    line-height: 5vw;
+    margin: 20px;
+  }
+  .mobile-menu .closeBtn:hover {
+    cursor: pointer;
+  }
   .tiles-menu {
     width: 70vw;
     display: -ms-grid;
@@ -740,6 +798,7 @@ $rowHeight: 300px - $gap/2;*/
   }
   .tiles-menu li a:hover {
     text-decoration: none;
+    cursor: pointer;
   }
   .tiles-menu li:nth-of-type(3) a {
     line-height: 17.5vw;
