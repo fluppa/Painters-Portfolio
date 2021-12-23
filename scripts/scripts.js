@@ -30,7 +30,7 @@ function load() {
       gallery.style.display = 'flex'
       document.body.style.overflow = 'hidden'
       if (hamburgerIcon) hamburgerIcon.style.display = 'none'
-      let src = paintings[currentPainting].src
+      let src = paintings[currentPainting].src.replace('/img-min/', '/img/')
       gallery.querySelector('.painting').style.backgroundImage = 'url(' + src + ')'
     }
 

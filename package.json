@@ -1,0 +1,31 @@
+{
+  "name": "staticversion_v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogdanoffTheThird/StaticVersion_V2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bogdanoffTheThird/StaticVersion_V2/issues"
+  },
+  "homepage": "https://github.com/bogdanoffTheThird/StaticVersion_V2#readme",
+  "devDependencies": {
+    "gm": "^1.23.1",
+    "gulp": "^4.0.2",
+    "gulp-gm": "^0.0.9",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-scale-images": "^3.0.1"
+  },
+  "dependencies": {
+    "sharp": "^0.29.3"
+  }
+}
