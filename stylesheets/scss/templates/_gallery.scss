@@ -1,12 +1,38 @@
-.gallery-wrapper{
-    width: 80%; 
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    .gallery{
-        padding: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+.gallery-wrapper {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  .galleryHeading {
+    margin: 100px auto 50px auto;
+    padding: 100px 0 0px 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0;
+  }
+  .gallerySubHeading {
+    text-align: center;
+    font-size: 1.25em;
+    margin: 20px 0 0 0;
+  }
+  article {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 0 auto;
+  }
+  .gallery {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and(max-width: 900px) {
+  .gallery-wrapper {
+    .galleryHeading {
+      font-size: 1.4em;
     }
+  }
 }

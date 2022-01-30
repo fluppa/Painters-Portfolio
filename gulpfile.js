@@ -5,7 +5,7 @@ import imageResize from 'gulp-image-resize'
 import gm from 'gulp-gm'
 import scaleImage from 'gulp-scale-images'
 
-let qual = 5
+let qual = 15
 
 function architecture() {
   gulp
@@ -42,9 +42,17 @@ function drawings() {
     .pipe(gulp.dest('resources/img-min/paintings/drawings'))
 }
 
+function diploma() {
+  gulp
+    .src('resources/img/paintings/diploma/**/*')
+    .pipe(imagemin([mozjpeg({ quality: qual, progressive: true })]))
+    .pipe(gulp.dest('resources/img-min/paintings/diploma'))
+}
+
 export default () => {
   //paintings()
   //architecture()
   //drawings()
   //murals()
+  diploma()
 }

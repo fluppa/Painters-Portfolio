@@ -72,8 +72,12 @@ function load() {
         document.body.style.overflow = 'hidden'
         hamburgerIcon.style.display = 'none'
 
-        let oilPaintigns =
-          '<div class="closeBtn">&#10006</div><ul><li><a href="gallery_markups/oil_paintings_f/acts_g.html">Acts</a></li><li><a href="gallery_markups/oil_paintings_f/shoes_g.html">Shoes</a></li><li><a href="gallery_markups/oil_paintings_f/trees_g.html">Trees</a></li><li><a href="gallery_markups/oil_paintings_f/portraits_g.html">Portraits</a></li><li><a href="gallery_markups/oil_paintings_f/landscapes_g.html">Landscapes</a></li></ul></nav>'
+        let oilPaintigns = `<div class="closeBtn">&#10006</div><ul><li><a href="gallery_markups/oil_paintings_f/abstraction_g.html">Abstraction</a></li><li><a href="gallery_markups/oil_paintings_f/shoes_g.html">Shoes</a></li><li><a href="gallery_markups/oil_paintings_f/trees_g.html">Trees</a></li><li><a href="gallery_markups/oil_paintings_f/portraits_g.html">Portraits</a></li><li><a href="gallery_markups/oil_paintings_f/landscapes_g.html">Landscapes</a></li>      <li>
+                  <a href="gallery_markups/oil_paintings_f/chickens_g.html">Chickens</a>
+                </li>
+               <li>
+                <a href="gallery_markups/oil_paintings_f/reproductions_g.html">Reproductions</a>
+              </li></ul></nav>`
 
         let drawings =
           '<div class="closeBtn">&#10006</div><ul><li><a href="gallery_markups/drawings_f/ink_g.html">Ink</a></li><li><a href="gallery_markups/drawings_f/pastels_g.html">Pastels</a></li><li><a href="gallery_markups/drawings_f/fusain_g.html">Fusain</a></li></ul></nav>'

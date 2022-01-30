@@ -1,45 +1,51 @@
 $paintingHeight: 250px;
 $paintingWidth: 200px;
-.painting-wrapper{
-    width: 200px;
-    height: 300px;
-    margin: 50px;
-    figcaption{
-        text-align: center;
-        line-height: 5px;
-        text-transform: uppercase;
-        .availability{
-            font-weight: 600;
-        }
+.painting-wrapper {
+  width: 200px;
+  height: 300px;
+  margin: 50px;
+  figcaption {
+    text-align: center;
+    line-height: 5px;
+    text-transform: uppercase;
+    .availability {
+      font-weight: 600;
     }
-    .painting{
-       
-        width: 100%;
-        height: $paintingHeight;
-        margin: 0;
-        &:hover{
-            cursor: pointer;
-        }
+  }
+  .painting {
+    width: 100%;
+    height: $paintingHeight;
+    margin: 0;
+    &:hover {
+      cursor: pointer;
     }
-    img{
-        display: block;
-        height: $paintingHeight;
-        width: $paintingWidth;
-        margin-right: auto;
-        margin-left: auto;
-        object-fit: contain;
-        background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.007));
+  }
+  img {
+    display: block;
+    height: $paintingHeight;
+    width: $paintingWidth;
+    margin-right: auto;
+    margin-left: auto;
+    object-fit: cover;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.007));
+  }
+}
+
+#architecture {
+  .painting-wrapper {
+    img {
+      object-fit: contain;
     }
+  }
 }
 
 @media only screen and(max-width: 900px) {
-    .painting-wrapper{
-        figcaption{
-            font-size: 14px;
-            .availability{
-                font-weight: 400;
-            }
-        }
+  .painting-wrapper {
+    figcaption {
+      font-size: 14px;
+      .availability {
+        font-weight: 400;
+      }
     }
-    
+  }
 }
