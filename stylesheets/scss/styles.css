@@ -593,7 +593,7 @@ section.article-box article {
 
 section.article-box .diploma-link {
   display: block;
-  background-image: url("../../../resources/img/decorations/bgdiploma.jpg");
+  background-image: url("../../resources/img/decorations/bgdiploma.jpg");
   background-position-y: -40px;
   background-size: cover;
   background-repeat: no-repeat;
