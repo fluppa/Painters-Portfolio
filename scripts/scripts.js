@@ -14,7 +14,20 @@ function load() {
     document.body.style.overflow = 'initial'
     hamburgerIcon.style.display = 'block'
   })
-
+  //Skrypt do dyplomu
+  if (document.querySelector('#diploma')) {
+    let diploma = document.querySelector('#diploma')
+    for (let i = 1; i <= 136; i++) {
+      let photo = `<li class="painting-wrapper">
+                    <figure class=painting>
+                        <a class="painting-link" target="_blank">
+                            <img class="painting-image" src="../resources/img-min/paintings/diploma/photo${i}.jpg">
+                        </a>
+                    </figure>
+                </li>`
+      diploma.innerHTML += photo
+    }
+  }
   //Skrypt galerii z obrazami
   if (document.querySelector('.gallery-wrapper') !== null) {
     const galleryWrapper = document.querySelector('.gallery-wrapper')
