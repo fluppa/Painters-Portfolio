@@ -398,8 +398,8 @@ nav .closeBtn {
   width: 200px;
   margin-right: auto;
   margin-left: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.007)));
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.007));
 }
