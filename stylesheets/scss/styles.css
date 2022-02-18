@@ -50,6 +50,10 @@ footer * {
 }
 
 @media only screen and (max-width: 900px) {
+  #forSaleFooter {
+    position: absolute;
+    bottom: 0;
+  }
   footer {
     padding: 25px 0px 25px 0px;
     margin-top: 100px;
@@ -565,8 +569,15 @@ nav .closeBtn {
           justify-content: center;
 }
 
+.forSaleInfo {
+  font-size: 2em;
+}
+
 @media only screen and (max-width: 900px) {
   .gallery-wrapper .galleryHeading {
+    font-size: 1.4em;
+  }
+  .forSaleInfo {
     font-size: 1.4em;
   }
 }

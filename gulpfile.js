@@ -49,10 +49,18 @@ function diploma() {
     .pipe(gulp.dest('resources/img-min/paintings/diploma'))
 }
 
+function tiles() {
+  gulp
+    .src('resources/img/tilesBackground/*')
+    .pipe(imagemin([mozjpeg({ quality: 50, progressive: true })]))
+    .pipe(gulp.dest('resources/img-min/tilesBackground'))
+}
+
 export default () => {
   //paintings()
   //architecture()
   //drawings()
   //murals()
-  diploma()
+  //diploma()
+  tiles()
 }
